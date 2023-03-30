@@ -12,7 +12,7 @@ bar = st.progress(0)
 for i in range(100):
     latest_iteration.text(f'iteration{i+1}')
     bar.progress(i+1)
-    time.sleep(0.1)
+    time.sleep(0.04)
 
 'done!!'
 
@@ -31,12 +31,12 @@ for i in range(100):
 # 'あなたの趣味＝', text
 
 
-# option = st.selectbox(
-#     'あなたが好きな数字をおしえてちょ、',
-#     list(range(1,11))
-# )
+option = st.selectbox(
+    'あなたが好きな数字をおしえてちょ、',
+    list(range(1,11))
+)
 
-# 'あんたの好きな数字は、', option, 'です。'
+'あんたの好きな数字は、', option, 'です。'
 
 # if st.checkbox('Show Image'):
 #     img = Image.open('sample.jpg')
